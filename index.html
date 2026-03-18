@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MyApp — версия 1.0</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .badge {
+      background: #1e40af;
+      color: #93c5fd;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      padding: 4px 14px;
+      border-radius: 20px;
+      margin-bottom: 24px;
+      border: 1px solid #3b82f6;
+    }
+
+    h1 {
+      font-size: 56px;
+      font-weight: 800;
+      background: linear-gradient(135deg, #60a5fa, #a78bfa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+
+    .version {
+      font-size: 18px;
+      color: #64748b;
+      margin-bottom: 40px;
+    }
+
+    .version span {
+      color: #22d472;
+      font-weight: 700;
+    }
+
+    .card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 16px;
+      padding: 32px 40px;
+      max-width: 480px;
+      width: 90%;
+      text-align: center;
+    }
+
+    .card p {
+      color: #94a3b8;
+      line-height: 1.7;
+      margin-bottom: 24px;
+    }
+
+    .deploy-info {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .info-item {
+      flex: 1;
+      background: #0f172a;
+      border-radius: 10px;
+      padding: 14px;
+      border: 1px solid #1e293b;
+    }
+
+    .info-item .label {
+      font-size: 10px;
+      color: #475569;
+      letter-spacing: 0.1em;
+      margin-bottom: 6px;
+    }
+
+    .info-item .value {
+      font-size: 14px;
+      font-weight: 700;
+      color: #e2e8f0;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 12px;
+      color: #334155;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="badge">● ЗАДЕПЛОЕНО</div>
+
+  <h1>MyApp</h1>
+  <div class="version">Версия <span>1.0.0</span></div>
+
+  <div class="card">
+    <p>Это первая версия приложения. Задеплоена автоматически через <strong>DeployHub CI/CD</strong> после пуша в ветку <code>main</code>.</p>
+
+    <div class="deploy-info">
+      <div class="info-item">
+        <div class="label">ВЕРСИЯ</div>
+        <div class="value">v1.0.0</div>
+      </div>
+      <div class="info-item">
+        <div class="label">СРЕДА</div>
+        <div class="value" style="color:#22d472">ПРОД</div>
+      </div>
+      <div class="info-item">
+        <div class="label">СТАТУС</div>
+        <div class="value" style="color:#22d472">● Online</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">Deployed by DeployHub • whocr33p/test-for-deploy</div>
+
+</body>
+</html>
